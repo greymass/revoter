@@ -1,0 +1,8 @@
+eosio_chain = 'EOSIO_CHAIN'
+eosio_node = 'EOSIO_NODE'
+eosio_perm = 'EOSIO_PERM'
+eosio_key = 'EOSIO_KEY'
+update_interval = 'UPDATE_INTERVAL'
+[log]
+__name = 'LOG_STREAMS'
+__format = 'json'
