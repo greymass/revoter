@@ -6,8 +6,8 @@ name = 'greymass-revoter'
 # eosio chain to use, jungle default
 eosio_chain = 'e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473'
 
-# eosio rpc node used to transact, aloha jungle default
-eosio_node = 'https://api.jungle.alohaeos.com'
+# eosio rpc node used to transact
+eosio_node = 'https://jungleapi.eossweden.se'
 
 # permission name to look for
 eosio_perm = 'vote'
@@ -15,8 +15,8 @@ eosio_perm = 'vote'
 # signing private key, required
 # eosio_key = '5contractspecifickeynotactiveplz'
 
-# how often to refresh votes
-update_interval = 60 # seconds
+# how often to check if accounts need votes refreshed
+update_interval = 600 # seconds
 
 # logging output, can be repeated
 [[log]]

@@ -5,8 +5,8 @@ import refreshVotes from './refresh'
 import version from './version'
 
 export async function main() {
-    logger.info({version}, 'starting')
     const updateInterval = parseInt(config.get('update_interval'), 10) * 1000
+    logger.info({version, updateInterval}, 'starting')
     assert(isFinite(updateInterval), 'Invalid update interval')
     const update = async () => {
         try {
