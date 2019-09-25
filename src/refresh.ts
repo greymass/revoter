@@ -72,7 +72,7 @@ async function refreshVote(publicKey: string, account: Account) {
     }
     const decay = getDecay(account) * 100
     log = log.child({stake: staked / 100000, decay})
-    if (decay > 0) {
+    if (decay > 0.1) {
         log.info('account decay above treshold, refreshing votes')
         const vote = {
             account: 'eosio',
