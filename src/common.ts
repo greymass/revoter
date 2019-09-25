@@ -9,9 +9,7 @@ export const rpcClient = new JsonRpc(config.get('eosio_node'), {
     fetch: fetch as any
 })
 
-export const signatureProvider = new JsSignatureProvider([
-    config.get('eosio_key')
-])
+export const signatureProvider = new JsSignatureProvider(JSON.parse(config.get('eosio_key')))
 
 export const apiClient = new Api({
     rpc: rpcClient,
