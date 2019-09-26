@@ -17,7 +17,7 @@ $ docker build .
 ...
 <container id>
 $ docker run -d --name greymass-revoter \
-    -e EOSIO_KEY='["5voterkeyvoterkey1","5voterkeyvoterkey2"]' \
+    -e EOSIO_KEY="5voterkeyvoterkey1,5voterkeyvoterkey2" \
     -e EOSIO_PERM="vote" \
     <container id>
 ```
